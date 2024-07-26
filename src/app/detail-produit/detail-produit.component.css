@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.card {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
+  background-color: #ce0033;
+}
+.card-header {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.card-header img {
+  width: 100px;
+  height: auto;
+}
+.card-header .back-btn, .card-header .fav-btn {
+  position: absolute;
+  top: 20px;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-header .back-btn {
+  left: 20px;
+}
+.card-header .fav-btn {
+  right: 20px;
+}
+.card-body {
+  background-color: white;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-body h5 {
+  font-weight: bold;
+}
+.card-body .price {
+  float: right;
+  font-weight: bold;
+}
+.card-body .badge {
+  background-color: #333;
+  color: white;
+  margin-right: 5px;
+}
+.card-footer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.card-footer .btn {
+  background-color: #ce0033;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}

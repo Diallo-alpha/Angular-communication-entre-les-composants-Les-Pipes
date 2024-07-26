@@ -1,1 +1,2 @@
-<app-produit></app-produit>
+<app-produit (productSelected)="onProductSelected($event)"></app-produit>
+<app-detail-produit [selectedProduct]="selectedProduct"></app-detail-produit>

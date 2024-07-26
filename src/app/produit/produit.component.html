@@ -25,11 +25,11 @@
   <div class="container">
     <div class="row">
       <div *ngFor="let item of produit" class="col-md-3">
-        <div class="card">
+        <div class="card" (click)="onSelectProduct(item)">
           <img [src]="item.imageUrl" class="card-img-top" alt="{{item.titre}}">
           <div class="card-body text-center">
             <h5 class="card-title">{{item.titre}}</h5>
-            <h6 class="card-title"><strong>{{item.prix}}</strong></h6>
+            <h6 class="card-title"><strong>{{item.prix | currency: 'EUR'}}</strong></h6>
             <button class="btn btn-primary">Achetez maintenant</button>
           </div>
         </div>

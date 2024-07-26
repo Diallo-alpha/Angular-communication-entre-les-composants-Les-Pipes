@@ -1,1 +1,31 @@
-<p>detail-produit works!</p>
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">{{ selectedProduct?.titre }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <div class="card-header">
+            <img [src]="selectedProduct?.imageUrl" class="img-fluid" alt="{{ selectedProduct?.titre }}">
+          </div>
+          <div class="card-body">
+            <h5>
+              {{ selectedProduct?.titre }}
+              <span class="price">{{ selectedProduct?.prix | currency: 'EUR' }}</span>
+            </h5>
+            <div>
+              <span class="badge">1kg</span>
+              <span class="badge">500g</span>
+            </div>
+            <p>Les pommes rouges sont croquantes et juteuses, parfaites pour une collation saine ou pour ajouter une touche sucrée à vos desserts.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary">Ajouter au panier</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
